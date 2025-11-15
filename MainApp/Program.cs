@@ -37,7 +37,7 @@ class Program
                 throw new ApplicationException($"Could not create plugin startup instance for {assemblyFullName}");
             
             startupInstance.Start();
-            Console.WriteLine($"Started {assemblyFullName}");
+            Console.WriteLine($"Started {startupInstance.Name}");
         }
     }
 }
